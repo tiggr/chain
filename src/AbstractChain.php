@@ -43,6 +43,7 @@ abstract class AbstractChain implements ArrayAccess, IteratorAggregate, JsonSeri
      *
      * @return mixed
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return $this->array[$offset];
